@@ -23,8 +23,17 @@ In this final project, you will implement the missing parts in the schematic. To
 * in some cases the result is -inf this happens when the distances median = 0, we can take the next non-one value to work around this problem, in the current solution still gives -inf.
 * in the spreadsheet there is a column for matches found for each combination, some times the number of matches is low or 0, that gives us wrong output for example image #3 using HARRIS-FREAK gives no matches, so there is no distance-ratios to calculate TTC.
 
-We can overcome any of the above problems by averaging the output over more than frame
-[spreadsheet File](https://drive.google.com/file/d/1t9gcTsutHliMu_-E8FWD_LkpdissjzOW/view?usp=sharing)
+We can overcome any of the above problems by averaging the output over more than frame.<br>
+[spreadsheet File](https://drive.google.com/file/d/1t9gcTsutHliMu_-E8FWD_LkpdissjzOW/view?usp=sharing)<br><br>
+From this file we can visualize the results comparing all possible combinations:
+<img src="images/CAM/001.png"/><br><br>
+After removing some wrong results to make the the chart more clear
+<img src="images/CAM/003.png"/><br><br>
+Inverting X and Y to see overall differances from the lidar over the 18 images
+<img src="images/CAM/004.png"/><br>
+## Best Combination:
+<img src="images/CAM/002.png"/>
+Based on this result we can visually say that best combination is the one with all images almost on the lidar readings `have same Y value as lidar`, so it is the shi-tomasi as detector and sift as descriptor gives the best results
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
