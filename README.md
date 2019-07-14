@@ -19,6 +19,12 @@ In this final project, you will implement the missing parts in the schematic. To
 * In both cases lidar readings are not perfect as we observed by the given two examples even any tiny error in Lidar readings causes large error in TTC claculations
 
 ## Performance Evaluation 2 [CAM]:
+### Examples where camera-based TTC estimation is way off:
+* in some cases the result is -inf this happens when the distances median = 0, we can take the next non-one value to work around this problem, in the current solution still gives -inf.
+* in the spreadsheet there is a column for matches found for each combination, some times the number of matches is low or 0, that gives us wrong output for example image #3 using HARRIS-FREAK gives no matches, so there is no distance-ratios to calculate TTC.
+
+We can overcome any of the above problems by averaging the output over more than frame
+[spreadsheet File](https://drive.google.com/file/d/1t9gcTsutHliMu_-E8FWD_LkpdissjzOW/view?usp=sharing)
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
