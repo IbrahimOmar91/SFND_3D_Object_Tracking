@@ -10,6 +10,9 @@ In this final project, you will implement the missing parts in the schematic. To
 3. You will then proceed to do the same using the camera, which requires to first associate keypoint matches to regions of interest and then to compute the TTC based on those matches. 
 4. And lastly, you will conduct various tests with the framework. Your goal is to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor. In the last course of this Nanodegree, you will learn about the Kalman filter, which is a great way to combine the two independent TTC measurements into an improved version which is much more reliable than a single sensor alone can be. But before we think about such things, let us focus on your final project in the camera course. 
 
+# Notes:
+To avoid the LIDAR error `Outliers from the car` i added a check between min distance and 2nd min. value if the difference is larger than 4 cm it takes the 2nd min. value to execlude the min. which is wrong in this case
+
 # Results:
 ## Performance Evaluation 1 [LIDAR]:
 ### Examples where the TTC estimate of the Lidar sensor does not seem plausible:
