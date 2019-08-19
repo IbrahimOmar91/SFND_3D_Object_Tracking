@@ -16,8 +16,8 @@ To avoid the LIDAR error `Outliers from the car` i added a check between min dis
 # Results:
 ## Performance Evaluation 1 [LIDAR]:
 ### Examples where the TTC estimate of the Lidar sensor does not seem plausible:
-* In frame #4 the lidar ttc result is 7 which is low compared to average of other frames, in which lidar readings was that current = 7.638 m and previous = 7.741 that makes difference `10.3 cm` larger than usual `5.5 cm` in this case the TTC calculated for lidar is smaller than it should be <img src="images/LIDAR/04.png" width="800" height="300" /><br><br>
-* In frame #7 exactly the opposite happened readings was Current = 7.555 and Previous = 7.577 with difference `2.2 cm` smaller than usual which gives a much larger TTC <img src="images/LIDAR/07.png" width="800" height="300" /><br><br>
+* In frame #4 the lidar ttc result is 7 which is low compared to average of other frames, in which lidar readings was that current = 7.638 m and previous = 7.741 that makes difference `10.3 cm` larger than usual `5.5 cm` in this case the TTC calculated for lidar is smaller than it should be <img src="images/LIDAR/04.png" width="820" height="300" /><br><br>
+* In frame #7 exactly the opposite happened readings was Current = 7.555 and Previous = 7.577 with difference `2.2 cm` smaller than usual which gives a much larger TTC <img src="images/LIDAR/07.png" width="820" height="300" /><br><br>
 ### Observations:
 * In both cases lidar readings are not perfect as we observed by the given two examples even any tiny error in Lidar readings causes large error in TTC calculations
 
