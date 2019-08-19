@@ -36,7 +36,7 @@ Inverting X and Y to see overall differences from the lidar over the 18 images
 <img src="images/CAM/004.png"/><br>
 ## Best Combination:
 <img src="images/CAM/002.png"/>
-Based on this result we can visually say that best combination is the one with all images almost on the lidar readings `have same Y value as lidar`, so it is the shi-tomasi as detector and sift as descriptor gives the best results
+Based on this result we can visually say that best combination is the one with all images almost on the lidar readings [have same Y value as lidar], so it is the shi-tomasi as detector and sift as descriptor gives the best results
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
